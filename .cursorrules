@@ -1,0 +1,42 @@
+// Proje: Crypto Planet - Kripto Para Borsası
+
+// 1. Dizin Yapısı
+- src/ altında tüm kaynak kodu (component, page, store, utils, hooks, styles, i18n, config, services, types) tutulmalı.
+- public/ altında sadece statik dosyalar (resimler, favicon, manifest vs.) olmalı.
+- Her sayfa için ayrı bir dizin (ör: src/pages/market, src/pages/trade).
+- Ortak componentler src/components altında, atomik tasarım prensiplerine uygun olarak (atoms, molecules, organisms, templates).
+- SCSS dosyaları component bazlı tutulmalı, global stiller src/styles altında olmalı.
+
+// 2. Kod Standartları
+- Tüm kod Javascript ile yazılmalı.
+- Clean code ve SOLID prensiplerine uyulmalı.
+- Fonksiyonlar ve componentler tek bir sorumluluğa sahip olmalı.
+- Kodda magic number ve string kullanılmamalı, sabitler src/config veya src/constants altında tutulmalı.
+- Her yeni feature için ayrı bir branch açılmalı, ana branch main olmalı.
+- Commit mesajları İngilizce ve anlamlı olmalı (örn: feat: add login page).
+
+// 3. Teknolojiler ve Araçlar
+- Next.js (app router tercih edilir)
+- SCSS (module bazlı, global için ayrı dosya)
+- Redux Toolkit veya Zustand (store için, tercihe göre)
+- Firebase Auth veya Supabase (auth ve db için, tercihe göre)
+- Formik + Yup (formlar ve validasyon)
+- i18n (en ve tr, src/i18n altında)
+- TradingView widget (grafikler için)
+- Kripto para logoları için ayrı bir servis/endpoint kullanılmalı.
+- Responsive ve pixel-perfect tasarım zorunlu.
+- Dark ve light mode desteği zorunlu (context veya store ile yönetilmeli).
+
+// 4. Test ve Kalite
+- Lighthouse skorları %85+ olmalı (performance, accessibility, best practices, SEO).
+- Kodda eslint ve prettier kullanılmalı, kurallar projenin kök dizininde .eslintrc ve .prettierrc ile tanımlanmalı.
+- Her component için en az bir test (Jest/React Testing Library) yazılmalı.
+- Kod review olmadan main'e merge yapılmamalı.
+
+// 5. Diğer Kurallar
+- Proje Vercel'e deploy edilecek, deployment ayarları dokümante edilmeli.
+- Github üzerinde branch ve PR yönetimi yapılmalı.
+- Türkçe ve İngilizce dil desteği zorunlu, yeni stringler i18n dosyalarına eklenmeli.
+- Tasarıma sadık kalınmalı, Figma referans alınmalı.
+- Gerekirse mock data ile başlanabilir, gerçek endpointler hazır olunca entegre edilmeli.
+- Her sayfa ve component için kısa bir açıklama (JSDoc veya üstte comment) eklenmeli.
