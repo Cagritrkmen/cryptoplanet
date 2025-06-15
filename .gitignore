@@ -39,3 +39,46 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Node modules
+node_modules/
+
+# Next.js build output
+.next/
+
+# Local env files
+.env*
+
+# OS junk files
+.DS_Store
+Thumbs.db
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Test coverage
+coverage/
+
+# VSCode settings
+.vscode/
+
+# Local IDE settings
+.idea/
+
+# Build output
+out/
+
+# Mac system files
+.AppleDouble
+.LSOverride
+
+# Optional npm cache directory
+.npm
+
+# Local history
+.history/
+
+# Custom rules
+.cursorrules
